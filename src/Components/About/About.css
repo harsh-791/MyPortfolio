@@ -1,0 +1,36 @@
+.about{
+    height: 100vh;
+    background-color: rgb(33,33,33);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about h2{
+    color: rgb(245, 101, 57);
+    font-size: 56px;
+    margin: 0px 0px 40px;
+}
+.about p{
+    color: #eaeaea;;
+    font-size: 20px;
+    line-height: 35px;
+}
+.about-info{
+    width: 65%;
+    height: 100%;
+
+}
+.info{
+    margin: 300px 400px 0px 200px;
+}
+.about-img{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width: 65%;
+    height: 65%;
+}

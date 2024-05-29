@@ -1,0 +1,35 @@
+.navBar{
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    width: 35%;
+    background-color: rgb(245, 101, 57);
+    height: 100%;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.right{
+    width: 65%;
+    background-color: rgb(33, 33, 33);
+    height: 100%;
+    padding: 35px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.navBar h1{
+    color: rgb(33, 33, 33);
+    font-family: "Great Vibes", cursive;
+    font-size: 2.8em;
+}
+.jss61{
+    font-size: 40px;
+    font-weight: 400;
+    color: #eaeaea;
+
+}
