@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.experience{
+    height: 120vh;
+    background-color: rgb(33,33,33);
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+.edc-info{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-right: 70px;
+}
+.edc-image{
+    width: 40%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 50px;
+}
+.image{
+    margin-right: 40px;
+    
+}
+.experience h1{
+    color: rgb(245,101,57);
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.experience-details{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.experience-details h4,
+.experience-details h5{
+    color: white;
+}
+.experience-details h6{
+    color: rgb(245,101,57);
+}
+.card{
+    height: 140px;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f565394d;
+    border-radius: 25px;
+}
+.card:hover{
+    background-color: #f5653980;
+    transition: 0.5s;
+}
+.card-imort{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.card-img{
+    background-color: rgb(245,101,57);
+    border-radius: 60%;
+    padding: 9px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.card-inf{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    
+}
+.card h6{
+    font-size: 15.6px;
+    font-stretch: expanded;
+    font-weight: 500;
+    color: rgb(245,101,57);
+    margin: px 10px 8px;
+}
+.card h4{
+    font-size: 20px;
+    color: white;
+    margin: 0px 0px 8px;
+}
+.card h5{
+    font-size: 17.4px;
+    color: #eaeaead4;
+    margin: 0px 0px 8px;
+}

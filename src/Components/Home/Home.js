@@ -1,8 +1,39 @@
 import './Home.css';
+import { useState, useEffect } from 'react';
 
-function Home(){
+function Home({typingSpeed, deletingSpeed, text}){
+    const[displayText,setDisplayText] = useState("");
+    const[isDeleting, setDeleting] = useState(false);
+    const[index,setIndex] = useState(0);
+    useEffect(() => {
+        const handleTyping = () => {
+            if(!isDeleting){
+                if(displayText.length < text[index].length){
+                    setDisplayText((prev) => prev + text[index].charAt(displayText.length));
+                }
+                else{
+                    setDeleting(true);
+                }
+            }
+            else{
+                if(displayText.length > 0){
+                    setDisplayText((prev) => prev.slice(0,-1));
+                }
+                else{
+                    setDeleting(false);
+                    setIndex((prev) => (prev+1) % text.length) 
+                }
+            }
+
+        };
+
+        const timeout = setTimeout(handleTyping, isDeleting ? deletingSpeed : typingSpeed);
+        return() => clearTimeout(timeout);
+    },[displayText, isDeleting, index, text, typingSpeed, deletingSpeed]);
+    
     return(
         <div className="home">
+           
             <div className="home-left">
                 <div className='icons'>
                     <a class="icon" href="https://www.linkedin.com/in" target="_blank" rel="noreferrer" >
@@ -23,10 +54,14 @@ function Home(){
                 </div>
             </div>
 
+            
+            <img className='profile-img' src={"https://media.licdn.com/dms/image/D5603AQHc9dzDm313Ig/profile-displayphoto-shrink_800_800/0/1716996122969?e=1722470400&v=beta&t=l8EYHib7gkQmPtlEgW-De5yTHSQtmversMDP7WCuY1A"}></img>
+            
+
             <div className="home-right">
                 <div class="righ">
                     <div class="home-info">
-                        <h6>Web Developer</h6>
+                        <h6>{displayText}</h6>
                         <h1>Harsh Verma</h1>
                         <p>There wasn't a bird in the sky, but that was not what caught her 
                             attention. It was the clouds. The deep green that isn't the color

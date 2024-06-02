@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.skills{
+    height: 100vh;
+    background-color: rgb(33,33,33);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.title h2{
+    color: rgb(245,101,57);
+    font-size: 62px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 100px;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.slide{
+    background-color: #212121; 
+    box-shadow: rgba(245, 101, 57, 0.3) 0px 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 24px;
+    padding: 32px 16px;
+    border-radius: 8px;
+}
+.slide-track{
+    display: flex;
+    width: 100%;
+    animation: scroll 20s linear infinite;
+
+}
+
+.slide-track:hover{
+    animation-play-state: paused;
+    
+}
+
+.slide:hover{
+    padding: 40px 24px;
+    transition: 0.8s;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.logo{
+    width: 100px;
+    height: 50px;
+    margin: 15px;
+
+}
+
+
+h3{margin-top: 10px;
+    color: rgb(234, 234, 234);
+}

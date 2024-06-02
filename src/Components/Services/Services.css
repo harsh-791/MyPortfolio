@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.services{
+    background: #212121;
+    height: 100vh;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.service-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 96px;
+}
+.service-info h1{
+    color: #f56539;
+    font-size: 60px;
+    margin-bottom: 24px;
+    font-style: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+}
+.service-info p{
+    color: #eaeaeacc;
+    font-size: 24px;
+}
+.service-carts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #FF764D;
+    height: 180px;
+    width: 180px;
+    padding:22.4px;
+    border-radius: 15px;
+    margin: 30px;
+}
+.cart h4{
+    color: #eaeaea;
+    font-size: 16px;
+    margin-top: 13px;
+    text-align: center;
+    line-height: 110%;
+    font-weight: 600;
+    font-style: bold;
+
+}
+.cart svg{
+    color: #eaeaea;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.cart svg:hover{
+    font-size: 60px;
+}
