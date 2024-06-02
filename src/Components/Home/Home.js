@@ -63,11 +63,15 @@ function Home({typingSpeed, deletingSpeed, text}){
                     <div class="home-info">
                         <h6>{displayText}</h6>
                         <h1>Harsh Verma</h1>
-                        <p>There wasn't a bird in the sky, but that was not what caught her 
+                        {/* <p>There wasn't a bird in the sky, but that was not what caught her 
                             attention. It was the clouds. The deep green that isn't the color
                             of clouds, but came with these. She knew what was coming and she 
                             hoped she was prepared.
-                        </p>
+                        </p> */}
+                        <p> With a fervent passion for Data Science and Artificial Intelligence,
+                            coupled with a deep love for coding, I embarked on my journey in 2020.
+                            Since then, I've embraced a relentless pursuit of knowledge and growth,
+                            never ceasing to expand my horizons.</p>
                     </div>
 
                     <div class="buttons">
