@@ -55,7 +55,7 @@ function Home({typingSpeed, deletingSpeed, text}){
             </div>
 
             
-            <img className='profile-img' src={"https://media.licdn.com/dms/image/D5603AQHc9dzDm313Ig/profile-displayphoto-shrink_800_800/0/1716996122969?e=1722470400&v=beta&t=l8EYHib7gkQmPtlEgW-De5yTHSQtmversMDP7WCuY1A"}></img>
+            <img className='profile-img' src={"https://media.licdn.com/dms/image/v2/D5603AQHc9dzDm313Ig/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718228059568?e=1730332800&v=beta&t=DcDZaC9wV8Rc8MqN0RF_aLrMCEKcUmydhnX02L7Xkwk"}></img>
             
 
             <div className="home-right">
